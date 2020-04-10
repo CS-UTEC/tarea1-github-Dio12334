@@ -1,3 +1,3 @@
-nombre = input()
+name = input()
 
-print("Hello ", nombre,"!")
+print("Hello ", name,"!")
