@@ -1,14 +1,24 @@
-palabra = input()
+import math
 
-end = len(palabra)-1
-ver = True
-for x in range(len(palabra)//2):
-    if palabra[x] != palabra[end]:
-            print("no es palindromo")
-            ver = False
-            break
-    end -= 1;
+numero = int(input())
 
-if ver == True:
-    print("es palindromo")
+raiz = int(math.sqrt(numero))
 
+prim = False
+
+cont = 2
+
+while cont <= raiz:
+
+    if numero % cont == 0:
+        print("No es primo")
+
+        prim = True
+
+        break
+
+    cont += 1
+    
+if prim == False:
+
+    print("Es primo")
